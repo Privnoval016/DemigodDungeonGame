@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8611747711927682083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5673454507300244658}
+  - component: {fileID: 4828720290978922842}
+  m_Layer: 0
+  m_Name: GazeTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5673454507300244658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611747711927682083}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4828720290978922842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611747711927682083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d0bd70dd928f6458665bc4306638c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usingEyeTracker: 0
+  gazeImage: {fileID: 0}
+  gazeFillImages: []
+  lerpRate: 20
+  maxFillAmount: 0.65
+  gazeRadius: 1
+  gazeResetTime: 0.4
+  gazeUnfreezeTime: 1
+  focusScale: 4
+  unfocusScale: 3
+  popScale: 5
+  gazeImageRect: {fileID: 0}
+  rippleEffects: []
+  gazeSlope: -0.0008
+  particleToCircleRatio: 0.25
+  petrifyEffect: {fileID: 0}
+  unpetrifyEffect: {fileID: 0}
+  gazeTarget: {fileID: 0}
+  frozenObjects: []
+  freezeSoundRef:
+    Guid:
+      Data1: -1203688744
+      Data2: 1335902568
+      Data3: -632658277
+      Data4: -1008043061
+    Path: event:/Freeze
+  unfreezeSoundRef:
+    Guid:
+      Data1: -311124479
+      Data2: 1330757687
+      Data3: -39639410
+      Data4: 2044910506
+    Path: event:/Unfreeze
